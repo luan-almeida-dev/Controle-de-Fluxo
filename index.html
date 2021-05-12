@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controle de Fluxo</title>
+
+    <link rel="stylesheet" href="./style/style.css">
+        <rel>
+            <hfref></hfref>
+        </rel>
+    </link>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="title">
+            <h1>Gerenciamento de Ordens</h1>
+        </div>
+        <div class="content">
+            <form>
+                <label id="cliente" for="Cliente">Cliente </label>
+                <select name="Cliente">
+                    <option class="option" value="Cliente" selected> </option>
+                    <option class="option" value="Cliente"> Luan </option>
+                    <option class="option" value="Cliente"> Joao </option>
+                    <option class="option" value="Cliente"> Almeida </option>
+                    <option class="option" value="Cliente"> Cachorro </option>
+                    <option class="option" value="Cliente"> Romel </option>
+                    <option class="option" value="Cliente"> Mario </option>
+                    <option class="option" value="Cliente"> Gato </option>
+                    <option class="option" value="Cliente"> Azul </option>
+                </select>
+
+                <label for="Cliente">N° Processo: </label>
+                <input type="text" placeholder="Digite Aqui">
+
+                <label for="Quantidade"> Quantidade: </label>
+                <input type="number" min="0">
+
+                <label for="Data-lançamento"> Data Lançamento: </label>
+                <input type="datetime-local">
+
+                <label for="Data-lançamento"> Previsão Inicio: </label>
+                <input type="datetime-local">
+
+                <label for="Data-lançamento"> Previsão Termino: </label>
+                <input type="datetime-local">
+
+                <input type="reset" value=" Resetar">
+                <input id="submit" type="submit">
+
+            </form>
+        </div>
+
+    </div>
+
+    <footer class="footer"> Desenvolvido por: Luan de Almeida da Silva</footer>
+
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.5.0/firebase.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.5.0/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyC9dPcLBuzCLKIxDhA8se5dPcNvMVQSuq4",
+    authDomain: "controle-de-fluxo-5526a.firebaseapp.com",
+    projectId: "controle-de-fluxo-5526a",
+    storageBucket: "controle-de-fluxo-5526a.appspot.com",
+    messagingSenderId: "641064282414",
+    appId: "1:641064282414:web:3875893ff24d08d89232bf",
+    measurementId: "G-VDXNJQQT5M"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+
+<script src="./firebase/usuarios.js"></script>
+</body>
+
+</html>

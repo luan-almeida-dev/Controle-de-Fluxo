@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+
+}
+
+body{
+    font-family: 'Open Sans',sans-serif;
+    background-color:#0a011d;
+}
+
+.title{
+    text-align: center;
+    padding: 10px;
+}
+
+.container{
+
+    margin-top: 3%;
+}
+
+.content{
+    margin-left: 20%;
+    margin-bottom: 30px;
+    
+
+}
+
+@keyframes form {
+    0%{background-color: #0a011d;}
+    25%{background-color: #3d107b;}
+    50%{background-color: #01172e;}
+    100%{background-color: #0469b3;}
+}
+
+form{
+    
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    animation-name: form;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: case-in-out;
+    background-color: slateblue;
+    max-width: 70%;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    justify-items:center;
+    
+
+}
+
+#cliente{
+    margin-top: 10px;
+}
+select{
+    color: black;
+    font-size: 16px;
+    width: 50%;
+    padding: 10px;
+    margin: 10px;
+
+}
+
+option{
+    color:blue;
+}
+input{
+    color: black;
+    font-size: 16px;
+    width: 50%;
+    padding: 10px;
+    margin: 10px;
+}
+
+@keyframes footer {
+    0%{ left: 10px;}
+    50%{ left: 20px;}
+    75%{ left: 10px;}
+    100%{ left: 0px;}
+}
+
+footer{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    font-style: italic;
+    position: fixed;
+    color: red;
+    padding: 10px;
+    background-color: white;
+    border-radius: 8px;
+    border-color: blanchedalmond;
+}
